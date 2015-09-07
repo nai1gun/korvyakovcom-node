@@ -10,9 +10,20 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
-  response.render('pages/index', {title: 'Alexander Korvyakov, software engeneer'});
+  response.render('pages/index', {title: 'Alexander Korvyakov, software engeneer', page: 'index'});
 });
 
+(function(pages) {
+  for(var i = 0; i < pages.length; i++) {
+    page = pages[i];
+    app.get('/' + page, function(request, response) {
+      response.render('pages/' + page, 
+        {title: 'Alexander Korvyakov, software engeneer - ' + page, page: page});          
+    });
+  }
+})
+(['about', 'education', 'experience', 'projects', 'skills']); 
+/*
 app.get('/about', function(request, response) {
   response.render('pages/about', {title: 'Alexander Korvyakov, software engeneer - about'});
 });
@@ -31,7 +42,7 @@ app.get('/projects', function(request, response) {
 
 app.get('/skills', function(request, response) {
   response.render('pages/skills', {title: 'Alexander Korvyakov, software engeneer - skills'});
-});
+});*/
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));

@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include ../partials/header.ejs %>
+  </head>
+
+  <body>
+
+    <% include ../partials/nav.ejs %>
+
+    <div class="container">
+      <div class="hero-unit">
+        <h2>Employers I worked for</h2><br>
+        <ul id="employerTab" class="nav nav-pills">
+          <li class="active"><a href="#redhelper" data-toggle="tab">RedHelper</a></li>
+		      <li class=""><a href="#arktur" data-toggle="tab">Arktur Lab</a></li>
+          <li class=""><a href="#wiley" data-toggle="tab">Wiley</a></li>
+          <li class=""><a href="#tass" data-toggle="tab">ITAR-TASS</a></li>
+        </ul>
+        <div id="employerTabContent" class="tab-content">
+          <div class="tab-pane fade active in" id="redhelper">
+            <p>
+              <a href="http://redhelper.com/" target="_blank">
+                <img src="/img/redhelper_v2.png" style="position:relative;float:left;margin:0 10px 0 0;"/>
+              </a>
+               <a href="http://redhelper.com/" target="_blank">RedHelper</a> is a next-generation "live chat" web service. It provides effective online consultations platform that allows a webmaster to talk to website visitors and convert them into customers. It has many unique features (such as "Co-Browse" technology) and is considered as one of the russian market leaders.</p>
+               <p style="text-align:center;">
+                <iframe width="560" height="315" src="//www.youtube.com/embed/_tBu2W-_pnQ" frameborder="0" allowfullscreen></iframe>
+               </p>
+            <p><b>My role and responsibilities:</b></p>
+            <p>In RedHelper I'm a lead developer on several services and systems including client's "personal account", RedHelper internal CRM and livechat server side web services.
+I have lobbied and introduced such technologies as MyBatis, Flyway, ElasticSearch, AngularJS and others.</p>
+            <p><b>Duration:</b></p>
+            <p>Nov 2012 - Jun 2015</p>
+          </div>
+		  <div class="tab-pane fade" id="arktur">
+            <p>
+               <img src="/img/arktur.png" style="position:relative;float:left;margin:0 5px 0 0;"/>
+			         <b>Arktur Lab</b> used to be an ambitios game development studio which specializes on mobile and social network games. Unfortunately this startup did not take off.</p>
+            <p><b>My role and responsibilities:</b></p>
+            <p>I was working on Hexagurat - a game for VKontakte social network as a server-side java developer. I improved and supported high-load game server and introduced artificial intelligence for the Hexagurat bots.</p>
+            <p><b>Duration:</b></p>
+            <p>Aug 2012 - Oct 2012</p>
+          </div>
+          <div class="tab-pane fade" id="wiley">
+            <p>
+              <a href="http://www.wiley.com/" target="_blank">
+                <img src="/img/wiley.png" style="position:relative;float:left;margin:5px;"/>
+              </a>
+              <a href="http://www.wiley.com/" target="_blank">John Wiley &amp; Sons, Inc.</a>, also referred to as Wiley, is a global publishing company that specializes in academic publishing and markets its products to professionals and consumers, students and instructors in higher education, and researchers and practitioners in scientific, technical, medical, and scholarly fields. The company produces books, journals, and encyclopedias, in print and electronically, as well as online products and services, training materials, and educational materials for undergraduate, graduate, and continuing education students.
+            </p>
+            <p>
+            Founded in 1807, Wiley is known for publishing For Dummies and the Frommer's travel series, as well as the Webster's New World Dictionary and CliffsNotes. As of 2012, the company had 5,100 employees and a revenue of US$1.8 billion.</p>
+            <p><b>My role and responsibilities:</b></p>
+            <p>In Wiley I developed web and standalone applications for Wiley company internal usage. These were big enterprise-level content management and validation systems. 
+Here I worked in teams contained up to 10 members and also I used to manage up to 3 remote developers.</p> 
+<p>
+I had lots of phone meetings and email conversations with english speaking colleagues (as Wiley is a big international company with main office in USA).
+We used java technologies (JBoss stack) and a lot of XML processing and validation tools.</p>
+            <p><b>Duration:</b></p>
+            <p>Sep 2010 - Aug 2012</p>
+          </div>
+          <div class="tab-pane fade" id="tass">
+            <p>
+              <a href="http://en.itar-tass.com/" target="_blank">
+                <img src="/img/itar-tass.png" style="position:relative;float:left;margin-right:12px;"/>
+              </a>
+            In existence since 1904, the <a href="ttp://en.itar-tass.com/" target="_blank">ITAR-TASS News Agency</a> is one of the world's largest international information agencies. The successor to the Soviet TASS news agency, it was re-named in 1992, when Russia proclaimed its sovereignty following the collapse of the USSR. It has retained its status of being the state central information agency.
+            </p>
+            <p><b>My role and responsibilities:</b></p>
+            <p>ITAR-TASS internal systems administration and support (web, domain, mail, ftp servers, user workstations). Web sites support and maintainence, web development.
+            <p><b>Duration:</b></p>
+            <p>Sep 2008 - Apr 2010</p>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <% include ../partials/footer.ejs %>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <% include ../partials/scripts.ejs %>
+
+  </body>
+</html>

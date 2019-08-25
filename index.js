@@ -21,6 +21,10 @@ app.get('/', function(request, response) {
   }); 
 });
 
+app.get('/agile-ml', function(req, res) {
+  res.redirect('https://www.linkedin.com/pulse/why-machine-learning-development-should-always-agile-korvyakov/');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });

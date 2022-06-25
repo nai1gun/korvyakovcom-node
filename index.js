@@ -30,6 +30,11 @@ app.get('/structuring-ml', function(req, res) {
   res.redirect('https://www.tomtom.com/blog/location-technology/structuring-machine-learning/');
 });
 
+
+app.get('/road-safety', function(req, res) {
+  res.redirect('https://www.linkedin.com/pulse/why-machine-learning-development-should-always-agile-korvyakov/');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
